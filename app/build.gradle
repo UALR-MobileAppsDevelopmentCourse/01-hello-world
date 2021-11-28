@@ -4,11 +4,11 @@ apply plugin: 'com.android.application'
 // TODO. Two build.gradle files: project + module (app)
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
     defaultConfig {
         applicationId "com.ualr.myfirstapp" // TODO 07. Identifies the app on the device and in the Play Store
         minSdkVersion 20                    // TODO 08. Lowest compatible API level
-        targetSdkVersion 29                 // TODO 09. Highest targeted API level
+        targetSdkVersion 31                 // TODO 09. Highest targeted API level
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -23,9 +23,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.3.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
-    testImplementation 'junit:junit:4.13'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.4.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.google.android.material:material:1.4.0'
